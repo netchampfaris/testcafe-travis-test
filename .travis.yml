@@ -1,0 +1,11 @@
+language: node_js
+dist: trusty
+
+node:
+  - 7.10.0
+  
+install:
+  - npm install -g testcafe testcafe-browser-provider-saucelabs
+
+script:
+  - testcafe "saucelabs:Chrome" testcafe.js
