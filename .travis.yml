@@ -1,8 +1,8 @@
 language: node_js
 dist: trusty
 
-node:
-  - 7.10.0
+node_js:
+  - "7"
   
 install:
   - npm install -g testcafe testcafe-browser-provider-saucelabs
